@@ -1,0 +1,139 @@
+dora@dora-Inspiron-3910:~/vul_shield/UnixBench$ ./Run
+make all
+make[1]: Entering directory '/home/dora/vul_shield/UnixBench'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+./tmp  exists
+./results  exists
+make[1]: Leaving directory '/home/dora/vul_shield/UnixBench'
+sh: 1: 3dinfo: not found
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+   Version 5.1.3                      Based on the Byte Magazine Unix Benchmark
+
+   Multi-CPU version                  Version 5 revisions by Ian Smith,
+                                      Sunnyvale, CA, USA
+   January 13, 2011                   johantheghost at yahoo period com
+
+Wide character in print at ./Run line 1511.
+Wide character in printf at ./Run line 1542.
+
+1 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+1 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+1 x Execl Throughput  1 2 3
+
+1 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+1 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+1 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+1 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+1 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+1 x Process Creation  1 2 3
+
+1 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+1 x Shell Scripts (1 concurrent)  1 2 3
+
+1 x Shell Scripts (8 concurrent)  1 2 3
+Wide character in printf at ./Run line 1484.
+Wide character in printf at ./Run line 1484.
+
+========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: dora-Inspiron-3910: GNU/Linux
+   OS: GNU/Linux -- 5.15.0-105-generic -- #115~20.04.1-Ubuntu SMP Mon Apr 15 17:33:04 UTC 2024
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+   CPU 0: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 1: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 2: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 3: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 4: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 5: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 6: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 7: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 8: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 9: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 10: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 11: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 12: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 13: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 14: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 15: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 16: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 17: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 18: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 19: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   02:20:57 up 23:03,  4 users,  load average: 1.70, 2.67, 2.62; runlevel 5
+
+------------------------------------------------------------------------
+Benchmark Run: 一 4月 29 2024 02:20:57 - 02:49:25
+20 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       74869420.1 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                    11162.6 MWIPS (10.0 s, 7 samples)
+Execl Throughput                               9676.3 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       2802705.4 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          780463.8 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       6985622.5 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             4198600.0 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 433728.7 lps   (10.0 s, 7 samples)
+Process Creation                               7765.0 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   6548.3 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   7063.7 lpm   (60.0 s, 2 samples)
+System Call Overhead                        3701939.4 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   74869420.1   6415.5
+Double-Precision Whetstone                       55.0      11162.6   2029.6
+Execl Throughput                                 43.0       9676.3   2250.3
+File Copy 1024 bufsize 2000 maxblocks          3960.0    2802705.4   7077.5
+File Copy 256 bufsize 500 maxblocks            1655.0     780463.8   4715.8
+File Copy 4096 bufsize 8000 maxblocks          5800.0    6985622.5  12044.2
+Pipe Throughput                               12440.0    4198600.0   3375.1
+Pipe-based Context Switching                   4000.0     433728.7   1084.3
+Process Creation                                126.0       7765.0    616.3
+Shell Scripts (1 concurrent)                     42.4       6548.3   1544.4
+Shell Scripts (8 concurrent)                      6.0       7063.7  11772.8
+System Call Overhead                          15000.0    3701939.4   2468.0
+                                                                   ========
+System Benchmarks Index Score                                        3208.9
+
+------------------------------------------------------------------------
+Benchmark Run: 一 4月 29 2024 02:49:25 - 02:49:25
+20 CPUs in system; running 20 parallel copies of tests

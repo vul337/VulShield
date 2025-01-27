@@ -1,0 +1,59 @@
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 10: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 11: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 12: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 13: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 14: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 15: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 16: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 17: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 18: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 19: 12th Gen Intel(R) Core(TM) i7-12700F (4224.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   21:29:12 up 18:11,  9 users,  load average: 0.52, 0.35, 0.19; runlevel 5
+
+------------------------------------------------------------------------
+Benchmark Run: 日 4月 28 2024 21:29:12 - 21:57:37
+20 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       74841389.3 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                    11165.6 MWIPS (9.9 s, 7 samples)
+Execl Throughput                               9731.4 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       2798039.9 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          780534.2 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       6957078.7 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             4198745.0 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 433585.2 lps   (10.0 s, 7 samples)
+Process Creation                               7894.3 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   6565.2 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   7108.0 lpm   (60.0 s, 2 samples)
+System Call Overhead                        3716523.6 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   74841389.3   6413.1
+Double-Precision Whetstone                       55.0      11165.6   2030.1
+Execl Throughput                                 43.0       9731.4   2263.1
+File Copy 1024 bufsize 2000 maxblocks          3960.0    2798039.9   7065.8
+File Copy 256 bufsize 500 maxblocks            1655.0     780534.2   4716.2
+File Copy 4096 bufsize 8000 maxblocks          5800.0    6957078.7  11995.0
+Pipe Throughput                               12440.0    4198745.0   3375.2
+Pipe-based Context Switching                   4000.0     433585.2   1084.0
+Process Creation                                126.0       7894.3    626.5
+Shell Scripts (1 concurrent)                     42.4       6565.2   1548.4
+Shell Scripts (8 concurrent)                      6.0       7108.0  11846.7
+System Call Overhead                          15000.0    3716523.6   2477.7
+                                                                   ========
+System Benchmarks Index Score                                        3216.6
+
+------------------------------------------------------------------------
+Benchmark Run: 日 4月 28 2024 21:57:37 - 21:57:37
+20 CPUs in system; running 20 parallel copies of tests
