@@ -274,6 +274,14 @@ static inline unsigned long vul_shield_regs_get_argument(struct pt_regs *regs, u
 		case R14: return regs->r14;
 		case R15: return regs->r15;
 		case VR1: return pi->cache[0];
+		case VR2: return pi->cache[1];
+		case VR3: return pi->cache[2];
+		case VR4: return pi->cache[3];
+		case VR5: return pi->cache[4];
+		case VR6: return pi->cache[5];
+		case VR7: return pi->cache[6];
+		case VR8: return pi->cache[7];
+		case VR9: return pi->cache[8];
 		default: 
 			pr_info("[VUL_PATCH] invalid regs idx.\n");
 			return 0;
@@ -300,6 +308,14 @@ static inline unsigned long vul_shield_regs_set_argument(struct pt_regs *regs, u
 		case R14: regs->r14=value;break;
 		case R15: regs->r15=value;break;
 		case VR1: pi->cache[0]=value;break;
+		case VR2: pi->cache[1]=value;break;
+		case VR3: pi->cache[2]=value;break;
+		case VR4: pi->cache[3]=value;break;
+		case VR5: pi->cache[4]=value;break;
+		case VR6: pi->cache[5]=value;break;
+		case VR7: pi->cache[6]=value;break;
+		case VR8: pi->cache[7]=value;break;
+		case VR9: pi->cache[8]=value;break;
 		default: 
 			pr_info("[VUL_PATCH] invalid regs idx.\n");
 			return 0;

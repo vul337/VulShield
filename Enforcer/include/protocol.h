@@ -57,6 +57,14 @@ enum x86_reg{
 	R15,
 	/* Vulshield regs*/
 	VR1,
+	VR2,
+	VR3,
+	VR4,
+	VR5,
+	VR6,
+	VR7,
+	VR8,
+	VR9,
 };
 
 enum reg_type{
