@@ -1,0 +1,61 @@
+/ # ./42008_poc
+[  506.833140][ T4887] sp0: Synchronizing with TNC
+[  506.852771][  T127] ================================================================================
+[  506.854421][  T127] UBSAN: array-index-out-of-bounds in drivers/net/hamradio/6pack.c:845:16
+[  506.855346][  T127] index 400 is out of range for type 'unsigned char [400]'
+[  506.856158][  T127] CPU: 3 PID: 127 Comm: kworker/u10:4 Not tainted 5.11.0-rc1 #2
+[  506.857075][  T127] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
+[  506.860022][  T127] Workqueue: events_unbound flush_to_ldisc
+[  506.860022][  T127] Call Trace:
+[  506.860022][  T127]  dump_stack+0x107/0x163
+[  506.860022][  T127]  ubsan_epilogue+0xb/0x5a
+[  506.860022][  T127]  __ubsan_handle_out_of_bounds.cold+0x62/0x6c
+[  506.860022][  T127]  decode_data.part.0+0x2c8/0x2e0
+[  506.860022][  T127]  sixpack_receive_buf+0xcb1/0x1320
+[  506.860022][  T127]  ? __init_ldsem+0x87/0x170
+[  506.860022][  T127]  ? sixpack_close+0x230/0x230
+[  506.860022][  T127]  tty_ldisc_receive_buf+0x14a/0x190
+[  506.860022][  T127]  tty_port_default_receive_buf+0x6e/0xa0
+[  506.860022][  T127]  flush_to_ldisc+0x20d/0x380
+[  506.860022][  T127]  process_one_work+0x9ad/0x1660
+[  506.860022][  T127]  ? pwq_dec_nr_in_flight+0x360/0x360
+[  506.860022][  T127]  ? rwlock_bug.part.0+0x90/0x90
+[  506.860022][  T127]  ? _raw_spin_lock_irq+0x41/0x50
+[  506.860022][  T127]  worker_thread+0x96/0xe20
+[  506.860022][  T127]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[  506.860022][  T127]  ? process_one_work+0x1660/0x1660
+[  506.860022][  T127]  kthread+0x3b1/0x4a0
+[  506.860022][  T127]  ? kthread_create_worker_on_cpu+0xf0/0xf0
+[  506.860022][  T127]  ret_from_fork+0x1f/0x30
+[  506.888880][  T127] ================================================================================
+[  506.890048][  T127] Kernel panic - not syncing: panic_on_warn set ...
+[  506.897015][  T127] CPU: 1 PID: 127 Comm: kworker/u10:4 Not tainted 5.11.0-rc1 #2
+[  506.903718][  T127] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
+[  506.903718][  T127] Workqueue: events_unbound flush_to_ldisc
+[  506.903718][  T127] Call Trace:
+[  506.903718][  T127]  dump_stack+0x107/0x163
+[  506.903718][  T127]  panic+0x343/0x77f
+[  506.903718][  T127]  ? print_oops_end_marker.cold+0x15/0x15
+[  506.903718][  T127]  ? dump_stack+0x157/0x163
+[  506.903718][  T127]  ? ubsan_epilogue+0x3e/0x5a
+[  506.903718][  T127]  ubsan_epilogue+0x54/0x5a
+[  506.903718][  T127]  __ubsan_handle_out_of_bounds.cold+0x62/0x6c
+[  506.903718][  T127]  decode_data.part.0+0x2c8/0x2e0
+[  506.903718][  T127]  sixpack_receive_buf+0xcb1/0x1320
+[  506.903718][  T127]  ? __init_ldsem+0x87/0x170
+[  506.903718][  T127]  ? sixpack_close+0x230/0x230
+[  506.903718][  T127]  tty_ldisc_receive_buf+0x14a/0x190
+[  506.903718][  T127]  tty_port_default_receive_buf+0x6e/0xa0
+[  506.903718][  T127]  flush_to_ldisc+0x20d/0x380
+[  506.903718][  T127]  process_one_work+0x9ad/0x1660
+[  506.903718][  T127]  ? pwq_dec_nr_in_flight+0x360/0x360
+[  506.903718][  T127]  ? rwlock_bug.part.0+0x90/0x90
+[  506.903718][  T127]  ? _raw_spin_lock_irq+0x41/0x50
+[  506.903718][  T127]  worker_thread+0x96/0xe20
+[  506.903718][  T127]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[  506.903718][  T127]  ? process_one_work+0x1660/0x1660
+[  506.903718][  T127]  kthread+0x3b1/0x4a0
+[  506.903718][  T127]  ? kthread_create_worker_on_cpu+0xf0/0xf0
+[  506.903718][  T127]  ret_from_fork+0x1f/0x30
+[  506.903718][  T127] Kernel Offset: disabled
+[  506.903718][  T127] Rebooting in 86400 seconds..
