@@ -1,0 +1,29 @@
+diff --git a/af_netlink_old.c b/./net/netlink/af_netlink.c
+index bca2a47..7a58936 100644
+--- a/af_netlink_old.c
++++ b/./net/netlink/af_netlink.c
+@@ -580,7 +580,13 @@ static int netlink_insert(struct sock *sk, u32 portid)
+ 	if (nlk_sk(sk)->bound)
+ 		goto err;
+ 
++	ASSERT_EXCLUSIVE_WRITER(nlk_sk(sk)->portid);
++	udelay(80);
++	cond_resched();
+ 	nlk_sk(sk)->portid = portid;
++	//udelay(20);  // optional
++	//cond_resched();
++	//pr_info("KCSAN_TRACE insert %px portid=%u\n", nlk_sk(sk), READ_ONCE(nlk_sk(sk)->portid));
+ 	sock_hold(sk);
+ 
+ 	err = __netlink_insert(table, sk);
+@@ -1141,7 +1147,10 @@ static int netlink_getname(struct socket *sock, struct sockaddr *addr,
+ 		nladdr->nl_pid = nlk->dst_portid;
+ 		nladdr->nl_groups = netlink_group_mask(nlk->dst_group);
+ 	} else {
++		udelay(80);
++		cond_resched();
+ 		nladdr->nl_pid = nlk->portid;
++		//pr_info("KCSAN_TRACE getname %px portid=%u\n", nlk, READ_ONCE(nlk->portid));
+ 		netlink_lock_table();
+ 		nladdr->nl_groups = nlk->groups ? nlk->groups[0] : 0;
+ 		netlink_unlock_table();
